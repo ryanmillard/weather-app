@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: lightskyblue;
+  padding: 20px;
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+form[name=get_weather] {
+  padding: 20px;
+  background-color: lightgray;
+}
+form[name=get_weather] button {
+  border-radius: 0;
+  border: none;
+  background-color: greenyellow;
+  padding: 5px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
