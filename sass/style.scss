@@ -20,3 +20,59 @@ form[name="get_weather"] {
     padding: 5px 10px;
   }
 }
+
+#location-name {
+  padding-left: 24px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border-radius: 20px;
+
+  &:active {
+    border: black 3px solid;
+  }
+}
+
+#location {
+  font-size: 2.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fa-location-dot {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+#location-extended {
+  font-size: 1rem;
+  font-family: monospace;
+  width: 300px;
+  margin: 0;
+}
+
+#weather-condition {
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: monospace;
+  margin: 0;
+}
+
+.location-icon {
+  position: fixed;
+  margin-left: 5px;
+  color: rgb(125,125,125);
+}
+
+#current-temp {
+  font-size: 6rem;
+}
+
+#current-temp-unit {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+#wind-speed, #humidity, #feels-like {
+  font-family: monospace;
+  font-size: 1rem;
+}
