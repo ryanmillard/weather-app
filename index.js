@@ -18,21 +18,18 @@ async function getWeatherData(location) {
   let locationExtended = document.getElementById('location-extended');
   let weatherCondition = document.getElementById('weather-condition');
   let currentTemp = document.getElementById('current-temp');
-
-  locationName.textContent = data.location.name;
-  locationExtended.textContent = `${data.location.region}, ${data.location.country}`;
-  weatherCondition.textContent = data.forecast.forecastday[0].day.condition.text.toUpperCase();
-  currentTemp.textContent = `${data.current.temp_c}`;
-
   let feelsLike = document.getElementById('feels-like');
   let windSpeed = document.getElementById('wind-speed');
   let humidity = document.getElementById('humidity');
 
+  locationName.textContent = data.location.name;
+  locationExtended.textContent = `${data.location.region}, ${data.location.country}`;
+  weatherCondition.textContent = data.forecast.forecastday[0].day.condition.text.toUpperCase();
+  currentTemp.textContent = parseInt(data.current.temp_c);
   feelsLike.textContent = `Feels like: ${parseInt(data.current.feelslike_c)}ºC`;
   windSpeed.textContent = `Wind Speed: ${parseInt(data.current.wind_mph)} MPH`;
   humidity.textContent = `Humidity: ${parseInt(data.current.humidity)}%`;
 
-  console.log(data.location.name);
   console.log("Data:", data);
 }
 
