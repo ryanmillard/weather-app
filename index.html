@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="app-name"><i class="fa-solid fa-cloud"></i> Weather App</span>
+      <form name="get_weather" autocomplete="off">
+        <div style="display: flex; align-items:center; height: 25px; width: 200px;">
+          <i class="fa-solid fa-location-crosshairs location-icon"></i>
+          <input id="location-name" type="text" placeholder="Enter City"/>
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </header>
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: calc(100vh - 65px); background: radial-gradient(rgb(37,68,93),rgb(21,14,61)); gap: 20px;">
+      <div style="background-color: rgb(255,255,255); width: 400px; border-radius: 20px;">
+        <div style="padding: 20px;">
+          <p id="weather-condition"> </p>
+          <div style="display: flex; align-items: center;">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="location">London</span>
+          </div>
+          <p id="location-extended"></p>
+          <div style="display: flex;">
+            <div style="display: flex;">
+              <span id="current-temp">53</span>
+              <span id="current-temp-unit">ºC</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 10px; justify-content: center; margin-left: 20px;">
+              <span id="feels-like">Feels like:</span>
+              <span id="wind-speed">Wind Speed:</span>
+              <span id="humidity">Humidity:</spah>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div style="background-color: white;">
+        <div>hi</div>
+      </div> -->
+    </div>
+  </main>
+</body>
+</html>
